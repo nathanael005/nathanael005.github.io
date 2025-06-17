@@ -6,21 +6,31 @@
     <title>AngelPC - Componentes | Arma tu PC Ideal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="../css/componentes.css">
 </head>
 <body class="bg-gray-900 text-gray-100">
 
-    <!-- Header -->
+    <!-- Header - Adaptado para modo móvil con menú de hamburguesa -->
     <header class="bg-gray-800 shadow-lg py-4">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="../index.html" class="text-3xl font-extrabold text-blue-500 tracking-wider">AngelPC X</a>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="../index.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300">Inicio</a></li>
-                    <li><a href="gaming.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300">PC Gaming</a></li>
-                    <li><a href="laptops.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300">Laptops</a></li>
-                    <li><a href="componentes.html" class="text-blue-400 font-semibold transition-colors duration-300">Componentes</a></li>
-                    <li><a href="contacto.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300">Contacto</a></li>
+        <div class="container mx-auto px-4 flex justify-between items-center relative">
+            <a href="../index.html" class="text-3xl font-extrabold text-blue-500 tracking-wider z-20">AngelPC X</a>
+            
+            <!-- Botón de hamburguesa para móviles - visible solo en pantallas pequeñas -->
+            <input type="checkbox" id="menu-toggle" class="hidden">
+            <label for="menu-toggle" class="md:hidden block cursor-pointer z-20">
+                <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </label>
+
+            <!-- Menú de navegación - se adapta a pantallas pequeñas/grandes -->
+            <nav class="md:block md:relative md:w-auto md:bg-transparent flex-col md:flex-row">
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 py-4 md:py-0 w-full items-center">
+                    <li><a href="../index.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300 block py-2 px-4 md:p-0 rounded-md md:rounded-none w-full text-center">Inicio</a></li>
+                    <li><a href="gaming.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300 block py-2 px-4 md:p-0 rounded-md md:rounded-none w-full text-center">PC Gaming</a></li>
+                    <li><a href="laptops.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300 block py-2 px-4 md:p-0 rounded-md md:rounded-none w-full text-center">Laptops</a></li>
+                    <li><a href="componentes.html" class="text-blue-400 font-semibold transition-colors duration-300 block py-2 px-4 md:p-0 rounded-md md:rounded-none w-full text-center">Componentes</a></li>
+                    <li><a href="contacto.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300 block py-2 px-4 md:p-0 rounded-md md:rounded-none w-full text-center">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -48,7 +58,7 @@
                         <img src="../img/Tarjeta Gráfica RTX 4070 Ti.jfif" alt="[Image of GPU]" class="w-full h-48 object-cover rounded-md mb-4">
                         <h3 class="text-2xl font-semibold mb-2 text-white">Tarjeta Gráfica RTX 4070 Ti</h3>
                         <p class="text-gray-400 mb-4">Potencia gráfica para los juegos más exigentes. Ray Tracing.</p>
-                        <div class="flex justify-between items-center mb-4">
+                        <div class="flex flex-col md:flex-row justify-between items-center md:items-baseline mb-4">
                             <span class="text-3xl font-extrabold text-green-400">€899,99</span>
                             <span class="text-lg text-red-400 line-through">€1.000,00</span>
                         </div>
@@ -61,7 +71,7 @@
                         <img src="../img/Procesador Intel Core i9-13900K.jfif" alt="[Image of CPU]" class="w-full h-48 object-cover rounded-md mb-4">
                         <h3 class="text-2xl font-semibold mb-2 text-white">Procesador Intel Core i9-13900K</h3>
                         <p class="text-gray-400 mb-4">Máximo rendimiento para gaming y multitarea profesional.</p>
-                        <div class="flex justify-between items-center mb-4">
+                        <div class="flex flex-col md:flex-row justify-between items-center md:items-baseline mb-4">
                             <span class="text-3xl font-extrabold text-green-400">€549,99</span>
                             <span class="text-lg text-red-400 line-through">€650,00</span>
                         </div>
@@ -74,7 +84,7 @@
                         <img src="../img/Memoria RAM DDR5 32GB (2x16GB).jfif" alt="[Image of RAM]" class="w-full h-48 object-cover rounded-md mb-4">
                         <h3 class="text-2xl font-semibold mb-2 text-white">Memoria RAM DDR5 32GB (2x16GB)</h3>
                         <p class="text-gray-400 mb-4">Velocidad y capacidad para las aplicaciones más exigentes.</p>
-                        <div class="flex justify-between items-center mb-4">
+                        <div class="flex flex-col md:flex-row justify-between items-center md:items-baseline mb-4">
                             <span class="text-3xl font-extrabold text-green-400">€149,99</span>
                             <span class="text-lg text-red-400 line-through">€180,00</span>
                         </div>
@@ -87,7 +97,7 @@
                         <img src="../img/SSD NVMe PCIe Gen4 1TB.jfif" alt="[Image of SSD NVMe]" class="w-full h-48 object-cover rounded-md mb-4">
                         <h3 class="text-2xl font-semibold mb-2 text-white">SSD NVMe PCIe Gen4 1TB</h3>
                         <p class="text-gray-400 mb-4">Arrancan sistemas y juegos en segundos. Velocidad extrema.</p>
-                        <div class="flex justify-between items-center mb-4">
+                        <div class="flex flex-col md:flex-row justify-between items-center md:items-baseline mb-4">
                             <span class="text-3xl font-extrabold text-green-400">€99,99</span>
                             <span class="text-lg text-red-400 line-through">€120,00</span>
                         </div>
@@ -100,7 +110,7 @@
                         <img src="../img/Placa Base Intel Z790 Gaming.jpg" alt="[Image of Motherboard]" class="w-full h-48 object-cover rounded-md mb-4">
                         <h3 class="text-2xl font-semibold mb-2 text-white">Placa Base Intel Z790 Gaming</h3>
                         <p class="text-gray-400 mb-4">La base perfecta para tu PC gaming de última generación.</p>
-                        <div class="flex justify-between items-center mb-4">
+                        <div class="flex flex-col md:flex-row justify-between items-center md:items-baseline mb-4">
                             <span class="text-3xl font-extrabold text-green-400">€249,99</span>
                             <span class="text-lg text-red-400 line-through">€280,00</span>
                         </div>
@@ -113,7 +123,7 @@
                         <img src="../img/Fuente de Poder 850W 80+ Gold.jpg" alt="[Image of PSU]" class="w-full h-48 object-cover rounded-md mb-4">
                         <h3 class="text-2xl font-semibold mb-2 text-white">Fuente de Poder 850W 80+ Gold</h3>
                         <p class="text-gray-400 mb-4">Potencia estable y eficiente para todos tus componentes.</p>
-                        <div class="flex justify-between items-center mb-4">
+                        <div class="flex flex-col md:flex-row justify-between items-center md:items-baseline mb-4">
                             <span class="text-3xl font-extrabold text-green-400">€119,99</span>
                             <span class="text-lg text-red-400 line-through">€140,00</span>
                         </div>
@@ -130,32 +140,32 @@
             <div class="container mx-auto px-4 text-center">
                 <h2 class="text-4xl font-bold mb-8 text-white">¿Por Qué Comprar Componentes en AngelPC?</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700">
+                    <article class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700">
                         <div class="text-5xl mb-4 text-yellow-400">🏅</div>
                         <h3 class="text-2xl font-semibold mb-2 text-white">Marcas de Calidad</h3>
                         <p class="text-gray-400">Solo trabajamos con los fabricantes más reconocidos y fiables.</p>
-                    </div>
-                    <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700">
+                    </article>
+                    <article class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700">
                         <div class="text-5xl mb-4 text-cyan-400">🤝</div>
                         <h3 class="text-2xl font-semibold mb-2 text-white">Asesoramiento Experto</h3>
                         <p class="text-gray-400">Te ayudamos a elegir los componentes perfectos para tu build.</p>
-                    </div>
-                    <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700">
+                    </article>
+                    <article class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700">
                         <div class="text-5xl mb-4 text-pink-400">📦</div>
                         <h3 class="text-2xl font-semibold mb-2 text-white">Gran Variedad</h3>
                         <p class="text-gray-400">Desde CPUs hasta sistemas de refrigeración, tenemos lo que buscas.</p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer - Adaptado para modo móvil -->
     <footer class="bg-gray-950 py-8 text-gray-400">
         <div class="container mx-auto px-4 text-center md:flex md:justify-between md:items-center">
             <p>&copy; 2025 AngelPC. Todos los derechos reservados.</p>
             <nav class="mt-4 md:mt-0">
-                <ul class="flex justify-center space-x-6">
+                <ul class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-6">
                     <li><a href="#" class="hover:text-white transition-colors duration-300">Política de Privacidad</a></li>
                     <li><a href="#" class="hover:text-white transition-colors duration-300">Términos de Servicio</a></li>
                     <li><a href="#" class="hover:text-white transition-colors duration-300">Preguntas Frecuentes</a></li>

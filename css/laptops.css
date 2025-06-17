@@ -1,0 +1,91 @@
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilos para la sección hero-laptops */
+        .hero-laptops {
+
+            background-color: #111827; /* Color de fondo sólido para la sección hero de laptops */
+            position: relative;
+        }
+
+        /* Estilos para la sección hero-components */
+        .hero-components {
+
+            background-color: #1A232F; /* Color de fondo sólido para la sección hero de componentes */
+            position: relative;
+        }
+        /* Se eliminó el pseudo-elemento ::before ya que no hay imagen que oscurecer */
+
+
+        /* Estilos para el menú de hamburguesa en pantallas pequeñas */
+        nav {
+            /* Oculta la navegación por defecto en móvil */
+            display: none;
+            /* Asegura que el color de fondo sea sólido para cubrir el contenido */
+            background-color: #1a202c; /* Un gris oscuro para el overlay */
+            /* Transición suave para la apertura/cierre */
+            transition: all 0.3s ease-in-out;
+            /* Alto z-index para que esté por encima de todo */
+            z-index: 50;
+        }
+
+        /* En pantallas medianas y mayores (desktop), la navegación se comporta como una barra normal */
+        @media (min-width: 768px) { /* breakpoint md en Tailwind */
+            nav {
+                display: block; /* Muestra la navegación */
+                position: relative; /* Vuelve a su posición normal dentro del flujo */
+                top: auto;
+                left: auto;
+                width: auto;
+                background-color: transparent; /* Fondo transparente en desktop */
+                flex-direction: row; /* Elementos en fila */
+                padding: 0; /* Sin padding extra */
+            }
+            nav ul {
+                display: flex; /* La lista también es flex en desktop */
+            }
+        }
+
+        /* Cuando el checkbox #menu-toggle está marcado y es móvil, la navegación se muestra como un overlay de pantalla completa */
+        #menu-toggle:checked ~ nav {
+            display: flex; /* Muestra el menú */
+            position: fixed; /* Fijo en el viewport */
+            top: 0; /* Desde la parte superior de la ventana */
+            left: 0;
+            width: 100%; /* Ancho completo */
+            height: 100vh; /* Alto completo del viewport */
+            /* Centrar el contenido del menú */
+            justify-content: center;
+            align-items: center;
+            /* Padding para que los elementos no se peguen a los bordes */
+            padding: 20px;
+        }
+
+        /* Estilos adicionales para la lista y los enlaces dentro del menú de overlay */
+        #menu-toggle:checked ~ nav ul {
+            flex-direction: column; /* Apila los elementos verticalmente */
+            width: 100%; /* Ocupa el ancho disponible */
+            align-items: center; /* Centra los enlaces horizontalmente */
+            /* Añadir espacio entre los elementos de la lista en modo overlay */
+            gap: 24px; /* Equivalente a Tailwind's space-y-6 */
+        }
+        #menu-toggle:checked ~ nav ul li {
+            width: 100%; /* Los elementos de la lista ocupan todo el ancho */
+            text-align: center;
+        }
+        #menu-toggle:checked ~ nav ul li a {
+            font-size: 1.8rem; /* Tamaño de fuente más grande para la legibilidad en móvil */
+            padding: 1rem 0; /* Área de clic más grande */
+            display: block; /* Para que el padding y width funcionen */
+            color: white; /* Asegurar color legible en el overlay */
+            font-weight: 700; /* Negrita */
+            border-bottom: 1px solid rgba(255,255,255,0.1); /* Separador suave */
+            transition: color 0.2s ease-in-out;
+        }
+        #menu-toggle:checked ~ nav ul li a:hover {
+            color: #60a5fa; /* Color de hover */
+        }
+        /* Eliminar el borde inferior del último elemento */
+        #menu-toggle:checked ~ nav ul li:last-child a {
+            border-bottom: none;
+        }

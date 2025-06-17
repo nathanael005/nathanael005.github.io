@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AngelPC X - Contacto | Estamos Aquí para Ayudarte</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">]
+    <link rel="stylesheet" href="../css/contacto.css"> 
 </head>
 <body class="bg-gray-900 text-gray-100">
 
-    <!-- Header -->
+    <!-- Header - Adaptado para modo móvil con menú de hamburguesa -->
     <header class="bg-gray-800 shadow-lg py-4">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="../index.html" class="text-3xl font-extrabold text-blue-500 tracking-wider">AngelPC X</a>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="../index.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300">Inicio</a></li>
-                    <li><a href="gaming.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300">PC Gaming</a></li>
-                    <li><a href="laptops.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300">Laptops</a></li>
-                    <li><a href="componentes.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300">Componentes</a></li>
-                    <li><a href="contacto.html" class="text-blue-400 font-semibold transition-colors duration-300">Contacto</a></li>
+        <div class="container mx-auto px-4 flex justify-between items-center relative">
+            <a href="../index.html" class="text-3xl font-extrabold text-blue-500 tracking-wider z-20">AngelPC X</a>
+            
+            <!-- Botón de hamburguesa para móviles - visible solo en pantallas pequeñas -->
+            <input type="checkbox" id="menu-toggle" class="hidden">
+            <label for="menu-toggle" class="md:hidden block cursor-pointer z-20">
+                <svg class="w-8 h-8 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </label>
+
+            <!-- Menú de navegación - se adapta a pantallas pequeñas/grandes -->
+            <nav class="md:block md:relative md:w-auto md:bg-transparent flex-col md:flex-row">
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 py-4 md:py-0 w-full items-center">
+                    <li><a href="../index.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300 block py-2 px-4 md:p-0 rounded-md md:rounded-none w-full text-center">Inicio</a></li>
+                    <li><a href="gaming.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300 block py-2 px-4 md:p-0 rounded-md md:rounded-none w-full text-center">PC Gaming</a></li>
+                    <li><a href="laptops.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300 block py-2 px-4 md:p-0 rounded-md md:rounded-none w-full text-center">Laptops</a></li>
+                    <li><a href="componentes.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300 block py-2 px-4 md:p-0 rounded-md md:rounded-none w-full text-center">Componentes</a></li>
+                    <li><a href="contacto.html" class="text-blue-400 font-semibold transition-colors duration-300 block py-2 px-4 md:p-0 rounded-md md:rounded-none w-full text-center">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -68,29 +78,29 @@
                 <div class="bg-gray-800 p-8 rounded-xl shadow-lg border border-gray-700">
                     <h2 class="text-3xl font-bold mb-6 text-white">Información de Contacto</h2>
                     <div class="space-y-6 text-gray-300">
-                        <div class="flex items-center">
-                            <span class="text-blue-400 text-2xl mr-4">📍</span>
+                        <div class="flex items-start md:items-center flex-col md:flex-row">
+                            <span class="text-blue-400 text-2xl mr-4 mb-2 md:mb-0">📍</span>
                             <div>
                                 <p class="font-semibold">Dirección:</p>
                                 <p>C/ Tecnología, 123, Preba Digital, 28001 Preba, Preba</p>
                             </div>
                         </div>
-                        <div class="flex items-center">
-                            <span class="text-blue-400 text-2xl mr-4">📞</span>
+                        <div class="flex items-start md:items-center flex-col md:flex-row">
+                            <span class="text-blue-400 text-2xl mr-4 mb-2 md:mb-0">📞</span>
                             <div>
                                 <p class="font-semibold">Teléfono:</p>
-                                <p>+1 849-857-9105
+                                <p>+1 849-857-9105</p>
                             </div>
                         </div>
-                        <div class="flex items-center">
-                            <span class="text-blue-400 text-2xl mr-4">📧</span>
+                        <div class="flex items-start md:items-center flex-col md:flex-row">
+                            <span class="text-blue-400 text-2xl mr-4 mb-2 md:mb-0">📧</span>
                             <div>
                                 <p class="font-semibold">Correo Electrónico:</p>
                                 <p>espinalnathanael11@gmail.com</p>
                             </div>
                         </div>
-                        <div class="flex items-center">
-                            <span class="text-blue-400 text-2xl mr-4">🕒</span>
+                        <div class="flex items-start md:items-center flex-col md:flex-row">
+                            <span class="text-blue-400 text-2xl mr-4 mb-2 md:mb-0">🕒</span>
                             <div>
                                 <p class="font-semibold">Horario de Atención:</p>
                                 <p>Lunes a Viernes: 9:00 - 18:00 (GMT+1)</p>
@@ -116,12 +126,12 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- Footer - Adaptado para modo móvil -->
     <footer class="bg-gray-950 py-8 text-gray-400">
         <div class="container mx-auto px-4 text-center md:flex md:justify-between md:items-center">
             <p>&copy; 2025 AngelPC. Todos los derechos reservados.</p>
             <nav class="mt-4 md:mt-0">
-                <ul class="flex justify-center space-x-6">
+                <ul class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-6">
                     <li><a href="#" class="hover:text-white transition-colors duration-300">Política de Privacidad</a></li>
                     <li><a href="#" class="hover:text-white transition-colors duration-300">Términos de Servicio</a></li>
                     <li><a href="#" class="hover:text-white transition-colors duration-300">Preguntas Frecuentes</a></li>
