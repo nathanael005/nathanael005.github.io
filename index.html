@@ -1,0 +1,177 @@
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>AngelPC X | Tu Tienda de Tecnología</title>
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="css/main.css"> <!-- Enlace al CSS principal de la home -->
+        </head>
+        <body class="bg-gray-900 text-gray-100">
+
+            <!-- Header -->
+            <header class="bg-gray-800 shadow-lg py-4">
+                <div class="container mx-auto px-4 flex justify-between items-center">
+                    <a href="index.html" class="text-3xl font-extrabold text-blue-500 tracking-wider">AngelPC X</a>
+
+                    <nav>
+                        <ul class="flex space-x-6">
+                            <li><a href="index.html" class="text-blue-400 font-semibold transition-colors duration-300">Inicio</a></li>
+                            <li><a href="views/gaming.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300">PC Gaming</a></li>
+                            <li><a href="views/laptops.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300">Laptops</a></li>
+                            <li><a href="views/componentes.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300">Componentes</a></li>
+                            <li><a href="views/contacto.html" class="text-gray-300 hover:text-blue-400 font-semibold transition-colors duration-300">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <main>
+                <!-- Hero Product Section (from AngelPC X) -->
+                <section class="hero-product text-center py-20 md:py-32 relative overflow-hidden rounded-b-lg">
+                    <div class="relative z-10 container mx-auto px-4">
+                        <h1 class="text-5xl md:text-6xl font-bold mb-4 text-white leading-tight">AngelPC X</h1>
+                        <p class="text-xl md:text-2xl text-gray-300 mb-6 max-w-2xl mx-auto">La máquina definitiva para gamers y creadores. Desata un rendimiento sin precedentes.</p>
+                        <div class="flex items-center justify-center space-x-6 mb-8">
+                            <span class="text-5xl md:text-6xl font-extrabold text-green-400">€1.899,99</span>
+                            <span class="text-lg md:text-xl text-red-400 line-through">€2.199,99</span>
+                        </div>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50">
+                            Añadir al Carrito
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Product Features Section -->
+                <section class="py-16 bg-gray-800">
+                    <div class="container mx-auto px-4">
+                        <h2 class="text-4xl font-bold text-center mb-12 text-white">Características Destacadas</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <article class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-blue-500 transition-colors duration-300 transform hover:scale-105">
+                                <div class="text-5xl mb-4 text-blue-500 text-center">💻</div>
+                                <h3 class="text-2xl font-semibold mb-3 text-white text-center">Procesador Extremo</h3>
+                                <p class="text-gray-400 text-center">Intel Core i9-13900K para un rendimiento inigualable en juegos y tareas exigentes.</p>
+                            </article>
+                            <article class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-red-500 transition-colors duration-300 transform hover:scale-105">
+                                <div class="text-5xl mb-4 text-red-500 text-center">🎮</div>
+                                <h3 class="text-2xl font-semibold mb-3 text-white text-center">Gráficos de Nueva Generación</h3>
+                                <p class="text-gray-400 text-center">NVIDIA GeForce RTX 4070 Ti, con ray tracing y DLSS para una inmersión total.</p>
+                            </article>
+                            <article class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-green-500 transition-colors duration-300 transform hover:scale-105">
+                                <div class="text-5xl mb-4 text-green-500 text-center">⚡</div>
+                                <h3 class="text-2xl font-semibold mb-3 text-white text-center">RAM Ultrarrápida</h3>
+                                <p class="text-gray-400 text-center">32GB DDR5 a 6000MHz para multitarea fluida y carga de juegos instantánea.</p>
+                            </article>
+                            <article class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300 transform hover:scale-105">
+                                <div class="text-5xl mb-4 text-purple-500 text-center">💾</div>
+                                <h3 class="text-2xl font-semibold mb-3 text-white text-center">Almacenamiento NVMe</h3>
+                                <p class="text-gray-400 text-center">SSD NVMe PCIe Gen4 de 1TB para arranques ultrarrápidos y grandes bibliotecas de juegos.</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Detailed Specifications Section -->
+                <section class="py-16 bg-gray-900">
+                    <div class="container mx-auto px-4">
+                        <h2 class="text-4xl font-bold text-center mb-12 text-white">Especificaciones Completas</h2>
+                        <div class="bg-gray-800 rounded-xl shadow-lg p-8 border border-gray-700 max-w-3xl mx-auto">
+                            <ul class="space-y-4 text-lg">
+                                <li class="flex justify-between items-center pb-2 border-b border-gray-700">
+                                    <span class="font-semibold text-gray-300">Procesador:</span>
+                                    <span class="text-blue-400">Intel Core i9-13900K (24 núcleos, hasta 5.8GHz)</span>
+                                </li>
+                                <li class="flex justify-between items-center pb-2 border-b border-gray-700">
+                                    <span class="font-semibold text-gray-300">Tarjeta Gráfica:</span>
+                                    <span class="text-red-400">NVIDIA GeForce RTX 4070 Ti (12GB GDDR6X)</span>
+                                </li>
+                                <li class="flex justify-between items-center pb-2 border-b border-gray-700">
+                                    <span class="font-semibold text-gray-300">Memoria RAM:</span>
+                                    <span class="text-green-400">32GB DDR5 6000MHz (2x16GB)</span>
+                                </li>
+                                <li class="flex justify-between items-center pb-2 border-b border-gray-700">
+                                    <span class="font-semibold text-gray-300">Almacenamiento:</span>
+                                    <span class="text-purple-400">1TB NVMe PCIe Gen4 SSD</span>
+                                </li>
+                                <li class="flex justify-between items-center pb-2 border-b border-gray-700">
+                                    <span class="font-semibold text-gray-300">Placa Base:</span>
+                                    <span class="text-gray-400">Chipset Intel Z790</span>
+                                </li>
+                                <li class="flex justify-between items-center pb-2 border-b border-gray-700">
+                                    <span class="font-semibold text-gray-300">Fuente de Alimentación:</span>
+                                    <span class="text-gray-400">850W 80 Plus Gold Modular</span>
+                                </li>
+                                <li class="flex justify-between items-center pb-2 border-b border-gray-700">
+                                    <span class="font-semibold text-gray-300">Refrigeración:</span>
+                                    <span class="text-gray-400">Refrigeración Líquida AIO 360mm</span>
+                                </li>
+                                <li class="flex justify-between items-center pb-2 border-b border-gray-700">
+                                    <span class="font-semibold text-gray-300">Sistema Operativo:</span>
+                                    <span class="text-gray-400">Windows 11 Home (Pre-instalado)</span>
+                                </li>
+                                <li class="flex justify-between items-center pb-2 border-b border-gray-700">
+                                    <span class="font-semibold text-gray-300">Conectividad:</span>
+                                    <span class="text-gray-400">Wi-Fi 6E, Bluetooth 5.2, Gigabit Ethernet</span>
+                                </li>
+                                <li class="flex justify-between items-center">
+                                    <span class="font-semibold text-gray-300">Puertos:</span>
+                                    <span class="text-gray-400">USB-C, USB 3.2, HDMI 2.1, DisplayPort 1.4a</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center mt-12">
+                             <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50">
+                                Configurar PC
+                            </button>
+                            <p class="text-gray-500 text-sm mt-4">Personaliza este equipo o consulta otras configuraciones.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Why Choose AngelPC Section -->
+                <section class="py-16 bg-gray-800">
+                    <div class="container mx-auto px-4 text-center">
+                        <h2 class="text-4xl font-bold text-center mb-8 text-white">¿Por Qué Elegir AngelPC?</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700">
+                                <div class="text-5xl mb-4 text-yellow-400">⭐</div>
+                                <h3 class="text-2xl font-semibold mb-2 text-white">Calidad Garantizada</h3>
+                                <p class="text-gray-400">Solo usamos componentes de primeras marcas y realizamos pruebas exhaustivas.</p>
+                            </div >
+                            <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700">
+                                <div class="text-5xl mb-4 text-cyan-400">🛠️</div>
+                                <h3 class="text-2xl font-semibold mb-2 text-white">Soporte Experto</h3>
+                                <p class="text-gray-400">Nuestro equipo está listo para ayudarte con cualquier consulta o problema técnico.</p>
+                            </div>
+                            <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700">
+                                <div class="text-5xl mb-4 text-pink-400">🚚</div>
+                                <h3 class="text-2xl font-semibold mb-2 text-white">Envío Rápido y Seguro</h3>
+                                <p class="text-gray-400">Recibe tu nuevo PC en la puerta de tu casa de forma eficiente y protegida.</p>
+                            </div>
+                        </div>
+                        <div class="mt-12">
+                             <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-10 rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-500 focus:ring-opacity-50">
+                                Ver Todos los PCs Gaming
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="bg-gray-950 py-8 text-gray-400">
+                <div class="container mx-auto px-4 text-center md:flex md:justify-between md:items-center">
+                    <p>&copy; 2025 AngelPC. Todos los derechos reservados.</p>
+                    <nav class="mt-4 md:mt-0">
+                        <ul class="flex justify-center space-x-6">
+                            <li><a href="#" class="hover:text-white transition-colors duration-300">Política de Privacidad</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors duration-300">Términos de Servicio</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors duration-300">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+
+        </body>
+        </html>
